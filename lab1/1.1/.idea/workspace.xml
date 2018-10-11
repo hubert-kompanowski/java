@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d05d5ae-d91e-41e5-9a45-3d987bf4ccbc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/javaIn/JIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javaIn/JIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1.4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../1.4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../1.5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.5/src/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/../1.5/src/Program.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,9 +16,9 @@
     <session id="1704148510">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -58,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/src/javaIn/JIn.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="22" column="54" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="54" />
+              <caret line="22" column="54" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -104,6 +104,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -116,12 +118,16 @@
               <item name="1.1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="1.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1.1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="javaIn" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -170,16 +176,17 @@
       <updated>1539075290243</updated>
       <workItem from="1539075292858" duration="177000" />
       <workItem from="1539079015607" duration="420000" />
+      <workItem from="1539085632823" duration="488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="597000" />
+    <option name="totallyTimeSpent" value="1085000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="961" y="0" width="959" height="1052" extended-state="4" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25520262" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2584885" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -226,7 +233,7 @@
     <entry file="file://$PROJECT_DIR$/src/javaIn/JIn.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="22" column="54" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="54" />
+          <caret line="22" column="54" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="54" />
         </state>
       </provider>
     </entry>
