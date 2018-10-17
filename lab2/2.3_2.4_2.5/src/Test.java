@@ -6,9 +6,7 @@ public class Test {
 
     private static LinkedList<Punkt3D> punkty;
 
-
     public static void main(String[] args) {
-
         int i=0;
         System.out.print("1. Wczytaj punkt 3D\n" +
                 "2. Wyświetl wszystkie punkty\n" +
@@ -18,22 +16,19 @@ public class Test {
 
         while(true){
             Scanner odczyt = new Scanner(System.in);
-
             i = odczyt.nextInt();
-
             switch (i){
                 case(1):
-                {
                     System.out.print("Podaj wspolrzedne punktu:\n");
-                    Scanner odczyt1 = new Scanner(System.in);
-                    int new_x = odczyt1.nextInt();
-                    int new_y = odczyt1.nextInt();
-                    int new_z = odczyt1.nextInt();
+                    odczyt = new Scanner(System.in);
+                    int new_x = odczyt.nextInt();
+                    int new_y = odczyt.nextInt();
+                    int new_z = odczyt.nextInt();
 
                     System.out.print("Podaj nazwe punktu:\n");
-                    odczyt1 = new Scanner(System.in);
+                    odczyt = new Scanner(System.in);
 
-                    Punkt3D new_point = new Punkt3D(new_x, new_y, new_z, odczyt1.nextLine());
+                    Punkt3D new_point = new Punkt3D(new_x, new_y, new_z, odczyt.nextLine());
 
                     if(punkty!=null){
                         punkty.add(new_point);}
@@ -41,68 +36,50 @@ public class Test {
                         punkty = new LinkedList<Punkt3D>();
                         punkty.addFirst(new_point);
                     }
-
-                    System.out.print("1. Wczytaj punkt 3D\n" +
-                            "2. Wyświetl wszystkie punkty\n" +
-                            "3. Oblicz odległość\n" +
-                            "4. Zakończ\n" +
-                            "?");
                     break;
-                }
 
                 case(2):
-                {
-                    for(int x=0; x<punkty.size(); x++){
-                        Punkt3D p = punkty.get(x);
+                    for (Punkt3D p : punkty) {
                         System.out.print("{" + p.getX() + ", " + p.getY() + ", " + p.getZ() + "} " + p.name + "\n");
                     }
-
-                    System.out.print("1. Wczytaj punkt 3D\n" +
-                            "2. Wyświetl wszystkie punkty\n" +
-                            "3. Oblicz odległość\n" +
-                            "4. Zakończ\n" +
-                            "?");
-
                     break;
-                }
 
                 case(3):
-                {
                     System.out.print("Podaj nazwe 1 punktu:\n");
-                    Scanner odczyt1 = new Scanner(System.in);
-                    String nazwa1 = odczyt1.nextLine();
+                    odczyt = new Scanner(System.in);
+                    String nazwa1 = odczyt.nextLine();
 
                     System.out.print("Podaj nazwe 2 punktu:\n");
-                    odczyt1 = new Scanner(System.in);
-                    String nazwa2 = odczyt1.nextLine();
+                    odczyt = new Scanner(System.in);
+                    String nazwa2 = odczyt.nextLine();
 
+                    double distance=0;
 
-                    for(int j=0; j<punkty.size(); j++){
-                        if(nazwa1==punkty.get(j).name){
-
+                    for (Punkt3D aPunkty : punkty) {
+                        if (nazwa1.equals(aPunkty.name)) {
+                            for (Punkt3D bPunkty : punkty) {
+                                if (nazwa2.equals(bPunkty.name)) {
+                                    distance = aPunkty.distance(bPunkty);
+                                }
+                            }
                         }
                     }
 
-                    System.out.print("odleglosc miedzy punktami wynosi: " + );
-
-
+                    System.out.print("odleglosc miedzy punktami wynosi: " + distance);
                     break;
-                }
 
                 case(4):
-                {
                     return;
-                }
 
                 default:
-                {
-                    System.out.print("Spróbuj jeszcze raz\n");
-                }
+                    System.out.print("Spróbuj jeszcze raz\n\n");
             }
 
-
+            System.out.print("\n1. Wczytaj punkt 3D\n" +
+                    "2. Wyświetl wszystkie punkty\n" +
+                    "3. Oblicz odległość\n" +
+                    "4. Zakończ\n" +
+                    "?\n");
         }
-
-
     }
 }
