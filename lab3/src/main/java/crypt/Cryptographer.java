@@ -1,3 +1,5 @@
+package main.java.crypt;
+
 import java.io.*;
 import java.util.Scanner;
 

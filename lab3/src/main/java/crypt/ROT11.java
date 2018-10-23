@@ -1,3 +1,5 @@
+package main.java.crypt;
+
 public class ROT11 implements Algorithm {
     private String alfabet = "abcdefghijklmnopqrstuvwxyz";
 

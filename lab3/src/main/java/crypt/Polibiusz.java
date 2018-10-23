@@ -1,3 +1,5 @@
+package main.java.crypt;
+
 public class Polibiusz implements Algorithm {
     private char[][] tab = new char[5][5];
 

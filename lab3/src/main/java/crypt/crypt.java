@@ -1,10 +1,12 @@
+package main.java.crypt;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class main {
-    public static void main(String[] argv) throws IOException {
+public class crypt {
+    public static void crypt() throws IOException {
         Polibiusz pol = new Polibiusz();
         ROT11 rot = new ROT11();
         Cryptographer crypt = new Cryptographer();
