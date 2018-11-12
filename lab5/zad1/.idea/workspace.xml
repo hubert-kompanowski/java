@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="adf354ba-ce8a-4e06-b9be-e9c45ed8ef86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../lab5/zad1/src/main/java/pl/edu/agh/kis/java2015/domain/Heap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/zad1/src/main/java/pl/edu/agh/kis/java2015/main/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/zad1/src/test/java/pl/edu/agh/kis/java2015/domain/HeapTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/zad1/src/test/java/pl/edu/agh/kis/java2015/main/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kolokwium1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kolokwium1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mammoth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mammoth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ATest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ATest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MammothTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MammothTest.java" afterDir="false" />
+    <list default="true" id="9c04e6ef-af67-4728-81d3-437f1e8db44d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/kis/java2015/domain/Heap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/kis/java2015/main/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/edu/agh/kis/java2015/domain/HeapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/edu/agh/kis/java2015/main/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kolokwium1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../kolokwium1/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -27,34 +23,33 @@
     </projectState>
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="991413093">
+    <session id="-20491629">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.2" value="2" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="8" />
+          <entry key="java" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="8" />
+          <entry key="JAVA" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="496" />
+          <entry key="java" value="389" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="496" />
+          <entry key="JAVA" value="389" />
         </counts>
       </usages-collector>
     </session>
@@ -62,86 +57,45 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/A.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/kis/java2015/main/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            <state relative-caret-position="225">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Food.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/kis/java2015/domain/Heap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            <state relative-caret-position="315">
+              <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/InadequateFoodException.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pl/edu/agh/kis/java2015/main/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Meat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ATest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Mammoth.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/MammothTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pl/edu/agh/kis/java2015/domain/HeapTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="685">
+              <caret line="56" column="38" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="JUnit4 Test Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -321,9 +275,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6163630378000" />
+        <entry key="$PROJECT_DIR$" value="6166736500000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="2663157734" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="746152507" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2007532874" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="9774949" />
       </map>
@@ -440,10 +394,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/A.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ATest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Mammoth.java" />
-        <option value="$PROJECT_DIR$/src/test/java/MammothTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/kis/java2015/main/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/kis/java2015/domain/Heap.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/edu/agh/kis/java2015/domain/HeapTest.java" />
       </list>
     </option>
   </component>
@@ -454,82 +407,125 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="width" value="949" />
+    <option name="width" value="959" />
     <option name="height" value="1053" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="lab5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="labs5" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="zad1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="lab5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="labs5" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="zad1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lab5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="labs5" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="zad1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="lab5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="labs5" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="zad1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lab5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="labs5" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="zad1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java2015" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lab5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="labs5" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="zad1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java2015" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lab5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zad1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java2015" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lab5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zad1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="lab5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zad1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lab5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zad1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java2015" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lab5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zad1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java2015" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lab5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zad1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java2015" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542066851191" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541685582697" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../labs5" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -544,31 +540,60 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MammothTest">
-    <configuration name="ATest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ATest" />
+  <component name="RunManager" selected="JUnit.HeapTest.extractMaxFromHeap">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.edu.agh.kis.java2015.main.App" />
+      <module name="lab5_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edu.agh.kis.java2015.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MammothTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MammothTest" />
+    <configuration name="HeapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab5_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edu.agh.kis.java2015.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edu.agh.kis.java2015.domain" />
+      <option name="MAIN_CLASS_NAME" value="pl.edu.agh.kis.java2015.domain.HeapTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HeapTest.extractMaxFromHeap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab5_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edu.agh.kis.java2015.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edu.agh.kis.java2015.domain" />
+      <option name="MAIN_CLASS_NAME" value="pl.edu.agh.kis.java2015.domain.HeapTest" />
+      <option name="METHOD_NAME" value="extractMaxFromHeap" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ATest" />
-      <item itemvalue="JUnit.MammothTest" />
+      <item itemvalue="Application.App" />
+      <item itemvalue="JUnit.HeapTest" />
+      <item itemvalue="JUnit.HeapTest.extractMaxFromHeap" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MammothTest" />
-        <item itemvalue="JUnit.ATest" />
+        <item itemvalue="JUnit.HeapTest.extractMaxFromHeap" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.HeapTest" />
       </list>
     </recent_temporary>
   </component>
@@ -577,39 +602,55 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="adf354ba-ce8a-4e06-b9be-e9c45ed8ef86" name="Default Changelist" comment="" />
-      <created>1540906695597</created>
+      <changelist id="9c04e6ef-af67-4728-81d3-437f1e8db44d" name="Default Changelist" comment="" />
+      <created>1541684117932</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1540906695597</updated>
-      <workItem from="1540906698480" duration="2564000" />
-      <workItem from="1541456130613" duration="68000" />
-      <workItem from="1541459302112" duration="13000" />
-      <workItem from="1542066670876" duration="185000" />
+      <updated>1541684117932</updated>
+      <workItem from="1541684121505" duration="1483000" />
+      <workItem from="1542066468379" duration="199000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ATest - 2018.10.30 at 15h 19m 42s.xml">
-      <configuration name="ATest" configurationId="JUnit" />
+    <history-entry file="HeapTest_extractMaxFromHeap - 2018.11.08 at 14h 53m 40s.xml">
+      <configuration name="HeapTest.extractMaxFromHeap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MammothTest - 2018.10.30 at 15h 28m 40s.xml">
-      <configuration name="MammothTest" configurationId="JUnit" />
+    <history-entry file="HeapTest_extractMaxFromHeap - 2018.11.08 at 14h 54m 07s.xml">
+      <configuration name="HeapTest.extractMaxFromHeap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ATest - 2018.11.13 at 00h 52m 16s.xml">
-      <configuration name="ATest" configurationId="JUnit" />
+    <history-entry file="HeapTest_extractMaxFromHeap - 2018.11.08 at 14h 54m 23s.xml">
+      <configuration name="HeapTest.extractMaxFromHeap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MammothTest - 2018.11.13 at 00h 53m 00s.xml">
-      <configuration name="MammothTest" configurationId="JUnit" />
+    <history-entry file="HeapTest_extractMaxFromHeap - 2018.11.08 at 14h 54m 46s.xml">
+      <configuration name="HeapTest.extractMaxFromHeap" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeapTest_extractMaxFromHeap - 2018.11.08 at 14h 54m 54s.xml">
+      <configuration name="HeapTest.extractMaxFromHeap" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeapTest_extractMaxFromHeap - 2018.11.08 at 14h 55m 29s.xml">
+      <configuration name="HeapTest.extractMaxFromHeap" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeapTest_extractMaxFromHeap - 2018.11.08 at 14h 56m 00s.xml">
+      <configuration name="HeapTest.extractMaxFromHeap" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeapTest_extractMaxFromHeap - 2018.11.08 at 14h 58m 50s.xml">
+      <configuration name="HeapTest.extractMaxFromHeap" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeapTest_extractMaxFromHeap - 2018.11.08 at 14h 59m 17s.xml">
+      <configuration name="HeapTest.extractMaxFromHeap" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeapTest_extractMaxFromHeap - 2018.11.08 at 14h 59m 44s.xml">
+      <configuration name="HeapTest.extractMaxFromHeap" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2830000" />
+    <option name="totallyTimeSpent" value="1682000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="949" height="1053" extended-state="4" />
+    <frame x="0" y="0" width="959" height="1053" extended-state="4" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2358804" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25520262" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -618,15 +659,15 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33692142" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3297414" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.33017877" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.1724138" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3297414" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -648,136 +689,33 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Food.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/kis/java2015/main/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="225">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/InadequateFoodException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/A.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ATest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Meat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Mammoth.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MammothTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/kis/java2015/domain/Heap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>lab5</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Gradle: junit:junit:4.12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/edu/agh/kis/java2015/main/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/edu/agh/kis/java2015/domain/HeapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="56" column="38" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
