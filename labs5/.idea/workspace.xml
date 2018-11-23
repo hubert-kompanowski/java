@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adf354ba-ce8a-4e06-b9be-e9c45ed8ef86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../lab5/zad1/src/main/java/pl/edu/agh/kis/java2015/domain/Heap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/zad1/src/main/java/pl/edu/agh/kis/java2015/main/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/zad1/src/test/java/pl/edu/agh/kis/java2015/domain/HeapTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab5/zad1/src/test/java/pl/edu/agh/kis/java2015/main/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kolokwium1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kolokwium1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mammoth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mammoth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ATest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ATest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MammothTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MammothTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -30,11 +22,11 @@
     <session id="991413093">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.17" value="1" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.2" value="2" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -454,7 +446,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="width" value="949" />
+    <option name="width" value="1612" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -466,7 +458,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -509,6 +500,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -586,6 +578,8 @@
       <workItem from="1541456130613" duration="68000" />
       <workItem from="1541459302112" duration="13000" />
       <workItem from="1542066670876" duration="185000" />
+      <workItem from="1542114935287" duration="41000" />
+      <workItem from="1542116886157" duration="30000" />
     </task>
     <servers />
   </component>
@@ -604,12 +598,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2830000" />
+    <option name="totallyTimeSpent" value="2901000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="949" height="1053" extended-state="4" />
+    <frame x="0" y="0" width="1612" height="1053" extended-state="4" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2358804" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24457216" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -648,6 +642,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/A.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Food.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -662,10 +663,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/A.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Meat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -676,13 +677,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Meat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>

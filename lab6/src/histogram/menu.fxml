@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="histogram.Menu">
+   <children>
+      <Button fx:id="btn_msg" layoutX="100.0" layoutY="440.0" mnemonicParsing="false" onAction="#drawHist" prefHeight="50.0" prefWidth="200.0" text="Draw Histogram">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label layoutX="50.0" layoutY="10.0" prefHeight="30.0" prefWidth="300.0" text="Insert your data separated by space:" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="data" layoutX="25.0" layoutY="50.0" prefHeight="50.0" prefWidth="350.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="120.0" prefHeight="40.0" prefWidth="300.0" text=" Insert number of intervals:" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numberOfIntervals" layoutX="115.0" layoutY="160.0" />
+      <Label layoutX="64.0" layoutY="250.0" text="Start:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="286.0" layoutY="250.0" text="End:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="start" layoutX="25.0" layoutY="279.0" prefHeight="26.0" prefWidth="127.0" />
+      <TextField fx:id="end" layoutX="239.0" layoutY="279.0" prefHeight="26.0" prefWidth="119.0" />
+   </children>
+</AnchorPane>

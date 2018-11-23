@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wykres.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="500.0" prefWidth="500.0">
+            <children>
+                <LineChart fx:id="LineChart" layoutX="14.0" layoutY="89.0" prefHeight="398.0" prefWidth="473.0">
+                    <xAxis>
+                        <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis fx:id="yAxis" side="LEFT" />
+                    </yAxis>
+                </LineChart>
+                <Button layoutX="376.0" layoutY="19.0" mnemonicParsing="false" onAction="#draw" prefHeight="47.0" prefWidth="104.0" text="Draw" />
+                <TextField fx:id="rangeStartTextField" layoutX="239.0" layoutY="40.0" prefHeight="26.0" prefWidth="52.0" />
+                <TextField fx:id="rangeEndTextField" layoutX="305.0" layoutY="40.0" prefHeight="26.0" prefWidth="52.0" />
+                <TextField fx:id="stalePrzyX" layoutX="14.0" layoutY="40.0" prefHeight="26.0" prefWidth="209.0" />
+                <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="14.0" layoutY="19.0" prefHeight="16.0" prefWidth="182.0" text="Podaj kolejne stałe przy x:" textOverrun="CLIP" wrapText="true" />
+                <Label layoutX="247.0" layoutY="19.0" text="Start:" />
+                <Label layoutX="316.0" layoutY="19.0" text="End:" />
+            </children>
+        </Pane>
+    </children>
+</GridPane>
