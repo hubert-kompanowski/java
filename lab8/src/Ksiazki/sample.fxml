@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ksiazki.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="700.0" prefWidth="800.0">
+            <children>
+            <Button layoutX="21.0" layoutY="24.0" mnemonicParsing="false" onAction="#showAll" prefHeight="72.0" prefWidth="177.0" text="Show All Books" />
+            <Button layoutX="216.0" layoutY="24.0" mnemonicParsing="false" onAction="#showByAuthor" prefHeight="72.0" prefWidth="177.0" text="Show Books By Author" />
+            <Button layoutX="415.0" layoutY="24.0" mnemonicParsing="false" onAction="#showByISBN" prefHeight="72.0" prefWidth="177.0" text="Show Books By ISBN" />
+            <Button layoutX="609.0" layoutY="24.0" mnemonicParsing="false" onAction="#addBook" prefHeight="72.0" prefWidth="177.0" text="Add Book" />
+            <ListView fx:id="ResultList" layoutX="21.0" layoutY="271.0" prefHeight="415.0" prefWidth="765.0" />
+            <TextField fx:id="Author" layoutX="219.0" layoutY="117.0" />
+            <TextField fx:id="ISBN" layoutX="418.0" layoutY="117.0" />
+            <TextField fx:id="AddISBN" layoutX="612.0" layoutY="104.0" promptText="ISBN" />
+            <TextField fx:id="AddTitle" layoutX="612.0" layoutY="143.0" promptText="Title" />
+            <TextField fx:id="AddAuthor" layoutX="612.0" layoutY="178.0" promptText="Author" />
+            <TextField fx:id="AddYear" layoutX="612.0" layoutY="212.0" promptText="Year" />
+            </children>
+        </Pane>
+    </children>
+</GridPane>

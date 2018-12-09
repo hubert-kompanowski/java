@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="osoby.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="500.0" prefWidth="1000.0">
+         <children>
+            <Button layoutX="873.0" layoutY="29.0" mnemonicParsing="false" onAction="#add" prefHeight="63.0" prefWidth="98.0" text="ADD" />
+            <TextField fx:id="FirstName" layoutX="71.0" layoutY="66.0" prefHeight="26.0" prefWidth="150.0" />
+            <TextField fx:id="Address" layoutX="381.0" layoutY="66.0" prefHeight="26.0" prefWidth="150.0" />
+            <TextField fx:id="SecondName" layoutX="226.0" layoutY="66.0" prefHeight="26.0" prefWidth="150.0" />
+            <ListView fx:id="ListFirstName" layoutX="71.0" layoutY="115.0" prefHeight="369.0" prefWidth="150.0" />
+            <ListView fx:id="ListSecondName" layoutX="226.0" layoutY="115.0" prefHeight="369.0" prefWidth="150.0" />
+            <ListView fx:id="ListAddress" layoutX="381.0" layoutY="115.0" prefHeight="369.0" prefWidth="150.0" />
+            <Label layoutX="99.0" layoutY="33.0" prefHeight="16.0" prefWidth="95.0" text="1. First name" />
+            <Label layoutX="248.0" layoutY="33.0" prefHeight="16.0" prefWidth="107.0" text="2. Second name" />
+            <Label layoutX="420.0" layoutY="33.0" prefHeight="16.0" prefWidth="73.0" text="3. Address" />
+            <Label layoutX="32.0" layoutY="71.0" text="ID" />
+            <ListView fx:id="ListID" layoutX="15.0" layoutY="115.0" prefHeight="369.0" prefWidth="47.0" />
+            <Label layoutX="577.0" layoutY="33.0" prefHeight="16.0" prefWidth="73.0" text="4. Zip code" />
+            <Label layoutX="713.0" layoutY="33.0" text="5. Phone number" />
+            <TextField fx:id="ZipCode" layoutX="538.0" layoutY="66.0" prefHeight="26.0" prefWidth="150.0" />
+            <TextField fx:id="PhoneNumber" layoutX="694.0" layoutY="66.0" prefHeight="26.0" prefWidth="150.0" />
+            <TextField fx:id="DelByID" layoutX="873.0" layoutY="136.0" prefHeight="26.0" prefWidth="98.0" />
+            <Label layoutX="863.0" layoutY="115.0" text=" Delete by ID">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="872.0" layoutY="169.0" mnemonicParsing="false" onAction="#delete" prefHeight="63.0" prefWidth="98.0" text="DELETE" />
+            <Label layoutX="864.0" layoutY="268.0" text="Change field">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ChangeID" layoutX="871.0" layoutY="332.0" prefHeight="26.0" prefWidth="34.0" />
+            <Label layoutX="881.0" layoutY="300.0" text="ID" />
+            <TextField fx:id="ChangeNumOfCol" layoutX="922.0" layoutY="332.0" prefHeight="26.0" prefWidth="56.0" />
+            <Label layoutX="921.0" layoutY="289.0" prefHeight="38.0" prefWidth="58.0" text="Number of col" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="873.0" layoutY="421.0" mnemonicParsing="false" onAction="#change" prefHeight="63.0" prefWidth="98.0" text="CHANGE" />
+            <ListView fx:id="ListZipCode" layoutX="538.0" layoutY="115.0" prefHeight="369.0" prefWidth="150.0" />
+            <ListView fx:id="ListPhoneNumber" layoutX="694.0" layoutY="115.0" prefHeight="369.0" prefWidth="150.0" />
+            <Label layoutX="903.0" layoutY="364.0" text="Data:" />
+            <TextField fx:id="ChangeData" layoutX="873.0" layoutY="386.0" prefHeight="26.0" prefWidth="98.0" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
