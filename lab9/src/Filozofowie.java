@@ -1,114 +1,80 @@
 import java.util.concurrent.Semaphore;
-import java.util.concurrent.ThreadLocalRandom;
 
 public class Filozofowie {
 
-    static int philosophersNumber = 5;
-    static Filozof philosophers[] = new Filozof[philosophersNumber];
-    static Fork forks[] = new Fork[philosophersNumber];
+    private final static int n = 5;
+    private final static Filozof[] filozofowie = new Filozof[n];
+    private final static Semaphore sem = new Semaphore(1);
 
-    static class Fork {
-
-        public Semaphore mutex = new Semaphore(1);
-
-        void grab() {
-            try {
-                mutex.acquire();
-            }
-            catch (Exception e) {
-                e.printStackTrace(System.out);
-            }
+    public static void main(String[] args) {
+        filozofowie[0] = new Filozof(0);
+        for (int i = 1; i < n; i++) {
+            filozofowie[i] = new Filozof(i);
         }
-
-        void release() {
-            mutex.release();
+        for (Thread t : filozofowie) {
+            t.start();
         }
-
-        boolean isFree() {
-            return mutex.availablePermits() > 0;
-        }
-
     }
 
-    static class Filozof extends Thread {
-
-        public int number;
-        public Fork leftFork;
-        public Fork rightFork;
-
-        Filozof(int num, Fork left, Fork right) {
-            number = num;
-            leftFork = left;
-            rightFork = right;
+    public static class Filozof extends Thread {
+        private enum Stan {MYSLI, JEST_GLODNY, JE};
+        private final int id;
+        private Stan stan;
+        private final Semaphore self;
+        Filozof(int id) {
+            this.id = id;
+            self = new Semaphore(0);
+            stan = Stan.MYSLI;
         }
-
-        public void run(){
-            System.out.println("Hi! I'm philosopher #" + number);
-
-            while (true) {
-                leftFork.grab();
-                System.out.println("Filozof #" + number + " grabs left fork.");
-                rightFork.grab();
-                System.out.println("Filozof #" + number + " grabs right fork.");
-                eat();
-                leftFork.release();
-                System.out.println("Filozof #" + number + " releases left fork.");
-                rightFork.release();
-                System.out.println("Filozof #" + number + " releases right fork.");
-            }
+        private Filozof lewo() {
+            return filozofowie[id == 0 ? n - 1 : id - 1];
         }
-
-        void eat() {
+        private Filozof prawo() {
+            return filozofowie[(id + 1) % n];
+        }
+        public void run() {
             try {
-                int sleepTime = ThreadLocalRandom.current().nextInt(0, 1000);
-                System.out.println("Filozof #" + " eats for " + sleepTime);
-                Thread.sleep(sleepTime);
-            }
-            catch (Exception e) {
-                e.printStackTrace(System.out);
-            }
-        }
-
-    }
-
-    public static void main(String argv[]) {
-        System.out.println("Dining philosophers problem.");
-
-        for (int i = 0; i < philosophersNumber; i++) {
-            forks[i] = new Fork();
-        }
-
-        for (int i = 0; i < philosophersNumber; i++) {
-            philosophers[i] = new Filozof(i, forks[i], forks[(i + 1) % philosophersNumber]);
-            philosophers[i].start();
-        }
-
-        while (true) {
-            try {
-                // sleep 1 sec
-                Thread.sleep(1000);
-
-                // check for deadlock
-                boolean deadlock = true;
-                for (Fork f : forks) {
-                    if (f.isFree()) {
-                        deadlock = false;
-                        break;
+                while (true) {
+                    pokazStan();
+                    switch(stan) {
+                        case MYSLI:
+                            mysliLubJe();
+                            sem.acquire();
+                            stan = Stan.JEST_GLODNY;
+                            break;
+                        case JEST_GLODNY:
+                            test(this);
+                            sem.release();
+                            self.acquire();
+                            stan = Stan.JE;
+                            break;
+                        case JE:
+                            mysliLubJe();
+                            sem.acquire();
+                            stan = Stan.MYSLI;
+                            test(lewo());
+                            test(prawo());
+                            sem.release();
+                            break;
                     }
                 }
-                if (deadlock) {
-                    Thread.sleep(1000);
-                    System.out.println("Hurray! There is a deadlock!");
-                    break;
-                }
-            }
-            catch (Exception e) {
-                e.printStackTrace(System.out);
+            } catch(InterruptedException ignored) {}
+            System.out.println();
+        }
+        static private void test(Filozof p) {
+            if (p.lewo().stan != Stan.JE && p.stan == Stan.JEST_GLODNY &&
+                    p.prawo().stan != Stan.JE) {
+                p.stan = Stan.JE;
+                p.self.release();
             }
         }
-
-        System.out.println("Bye!");
-        System.exit(0);
+        private void mysliLubJe() {
+            try {
+                Thread.sleep( Math.round(Math.random() * 5000));
+            } catch (InterruptedException e) {}
+        }
+        private void pokazStan() {
+            System.out.println("Filozof " + id + " " + stan);
+        }
     }
-
 }

@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32915f1c-3fa7-45bb-a198-91e0655a8224" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/libraries/mysql_mysql_connector_java_8_0_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +16,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/server2/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
+            <state relative-caret-position="435">
               <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -35,7 +28,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/server2/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1290">
+            <state relative-caret-position="851">
               <caret line="90" column="25" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -207,9 +200,9 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.CLI" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.EchoServer" />
-      <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Client" />
       <item itemvalue="Application.Server" />
     </list>
@@ -217,7 +210,6 @@
       <list>
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.Server" />
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.CLI" />
         <item itemvalue="Application.EchoServer" />
       </list>
@@ -236,16 +228,18 @@
       <workItem from="1544534994823" duration="2351000" />
       <workItem from="1545419025446" duration="150000" />
       <workItem from="1545420540292" duration="8436000" />
+      <workItem from="1545430895338" duration="12000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10937000" />
+    <option name="totallyTimeSpent" value="10949000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09071505" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09178229" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -280,13 +274,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/server1/EchoClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -307,49 +295,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server2/IDManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="23" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <element signature="e#580#581#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server2/SERV.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server2/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server2/CLI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="65" column="13" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="65" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server2/IDManager.java" />
+    <entry file="file://$PROJECT_DIR$/src/server2/SERV.java" />
+    <entry file="file://$PROJECT_DIR$/src/server2/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/server2/CLI.java" />
     <entry file="file://$PROJECT_DIR$/src/server2/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
+        <state relative-caret-position="435">
           <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -359,7 +311,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server2/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
+        <state relative-caret-position="851">
           <caret line="90" column="25" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
