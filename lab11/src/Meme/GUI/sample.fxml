@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Meme.GUI.Controller">
+
+   <children>
+      <Button layoutX="355.0" layoutY="550.0" mnemonicParsing="false" onAction="#enter" prefHeight="36.0" prefWidth="90.0" text="Enter">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="name" layoutX="14.0" layoutY="67.0" prefHeight="26.0" prefWidth="200.0" promptText="Name" />
+      <Label layoutX="293.0" layoutY="14.0" prefHeight="36.0" prefWidth="215.0" text="Create New MEME">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="UpString" layoutX="14.0" layoutY="146.0" prefHeight="26.0" prefWidth="200.0" promptText="Upper string" />
+      <TextField fx:id="DownString" layoutX="14.0" layoutY="179.0" prefHeight="26.0" prefWidth="200.0" promptText="Bottom string" />
+      <ImageView fx:id="FotoView" fitHeight="292.0" fitWidth="386.0" layoutX="303.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="704.0" layoutY="277.0" mnemonicParsing="false" onAction="#next" prefHeight="26.0" prefWidth="73.0" text="Next">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="704.0" layoutY="143.0" mnemonicParsing="false" onAction="#prev" prefHeight="26.0" prefWidth="73.0" text="Prev">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="389.0" layoutY="72.0" text="Choose a picture from the gallery:" />
+      <Label layoutX="415.0" layoutY="403.0" text="OR add your own picture:" />
+      <Button layoutX="418.0" layoutY="429.0" mnemonicParsing="false" onAction="#addPic" prefHeight="33.0" prefWidth="156.0" text="Add picture" />
+   </children>
+</AnchorPane>
