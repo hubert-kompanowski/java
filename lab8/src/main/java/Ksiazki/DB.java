@@ -29,8 +29,6 @@ public class DB{
         try {
             stmt = conn.createStatement();
 
-
-
             switch (selector){
                 case 1:
                 {
