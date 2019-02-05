@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Rectangle?>
-
 <AnchorPane prefHeight="750.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.IndexController">
-   <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="763.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="1115.0">
-         <fill>
-            <LinearGradient endX="1.0" endY="0.07211538461538461" startX="1.0" startY="1.0">
-               <stops>
-                  <Stop color="#286cab" />
-                  <Stop color="WHITE" offset="1.0" />
-               </stops>
-            </LinearGradient>
-         </fill>
-      </Rectangle>
-      <Button layoutX="472.0" layoutY="153.0" mnemonicParsing="false" onAction="#find" prefHeight="166.0" prefWidth="157.0" text="Wyszukaj mieszkania" />
-      <Button layoutX="448.0" layoutY="487.0" mnemonicParsing="false" onAction="#newOffer" prefHeight="215.0" prefWidth="204.0" text="Wstaw ofertę wynajmu" />
-   </children>
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="763.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="1115.0">
+            <fill>
+                <LinearGradient endX="1.0" endY="0.07211538461538461" startX="1.0" startY="1.0">
+                    <stops>
+                        <Stop color="#286cab" />
+                        <Stop color="WHITE" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Rectangle>
+
+    </children>
 </AnchorPane>
+

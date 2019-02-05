@@ -2,7 +2,6 @@ package APP;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.scene.layout.AnchorPane;
@@ -10,7 +9,6 @@ import javafx.scene.layout.Pane;
 
 import java.util.ArrayList;
 import java.util.List;
-import GUI.*;
 
 public class Main extends Application {
 
@@ -21,7 +19,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        grid.add(FXMLLoader.load(getClass().getResource("../GUI/index.fxml")));
+        grid.add(FXMLLoader.load(getClass().getResource("../GUI/account.fxml")));
 
         root.getChildren().setAll(grid.get(0));
         Scene scene = new Scene(root, 1100, 750);

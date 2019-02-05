@@ -25,8 +25,7 @@ import java.util.ResourceBundle;
 public class FindController implements Initializable {
 
     @FXML Text text;
-    @FXML TextArea description;
-    @FXML TextArea title;
+    @FXML Text description;
     @FXML ImageView imageView = new ImageView();
 
     @FXML TextField district;
@@ -71,6 +70,8 @@ public class FindController implements Initializable {
             text.setStyle("-fx-font-size: 30px");
 
         } else {
+
+
             disp();
 
             dispPhoto();
@@ -101,6 +102,9 @@ public class FindController implements Initializable {
     }
 
     private void disp() {
+        text.setText("Oferta "+(actual+1)+" z "+ size);
+        text.setStyle("-fx-font-size: 30px");
+
         sizePhoto = listData.get(actual).getISList().size();
         description.setText("WŁAŚCICIEL:\n" +
                 listData.get(actual).getName()+ "\n" +

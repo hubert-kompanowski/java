@@ -2,7 +2,6 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -46,18 +45,18 @@
        <TextField fx:id="fromSurface" layoutX="67.0" layoutY="450.0" prefHeight="26.0" prefWidth="61.0" promptText="Od" />
        <TextField fx:id="toSurface" layoutX="174.0" layoutY="450.0" prefHeight="26.0" prefWidth="61.0" promptText="Do" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a9d5ff" height="546.0" layoutX="306.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="730.0" />
-      <ImageView fx:id="imageView" fitHeight="270.0" fitWidth="316.0" layoutX="331.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true" />
-      <Button layoutX="341.0" layoutY="432.0" mnemonicParsing="false" onAction="#prevPhoto" prefHeight="22.0" prefWidth="116.0" text="Poprzednie zdjęcie">
+      <ImageView fx:id="imageView" fitHeight="335.0" fitWidth="415.0" layoutX="331.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="337.0" layoutY="465.0" mnemonicParsing="false" onAction="#prevPhoto" prefHeight="22.0" prefWidth="116.0" text="Poprzednie zdjęcie">
          <font>
             <Font size="10.0" />
          </font></Button>
-      <Button layoutX="521.0" layoutY="432.0" mnemonicParsing="false" onAction="#nextPhoto" prefHeight="22.0" prefWidth="116.0" text="Następne zdjęcie">
+      <Button layoutX="613.0" layoutY="465.0" mnemonicParsing="false" onAction="#nextPhoto" prefHeight="22.0" prefWidth="116.0" text="Następne zdjęcie">
          <font>
             <Font size="10.0" />
          </font></Button>
       <Button layoutX="320.0" layoutY="610.0" mnemonicParsing="false" onAction="#prevOffer" text="Poprzednia" />
       <Button layoutX="942.0" layoutY="610.0" mnemonicParsing="false" onAction="#nextOffer" text="Następna" />
-      <TextArea fx:id="description" editable="false" layoutX="707.0" layoutY="113.0" prefHeight="450.0" prefWidth="316.0" />
       <Text fx:id="text" layoutX="522.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="297.9999937415123" />
+      <Text fx:id="description" layoutX="776.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="233.99998605251312" />
    </children>
 </AnchorPane>
