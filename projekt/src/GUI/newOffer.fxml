@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.NewOfferController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="762.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="1115.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.07211538461538461" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop color="#286cab" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#abd6ff" height="197.0" layoutX="264.0" layoutY="134.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#abd6ff" height="421.0" layoutX="593.0" layoutY="134.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Button layoutX="14.0" layoutY="683.0" mnemonicParsing="false" onAction="#prev" prefHeight="53.0" prefWidth="105.0" text="Wstecz" />
+      <Button layoutX="982.0" layoutY="683.0" mnemonicParsing="false" onAction="#addOffer" prefHeight="53.0" prefWidth="105.0" text="Dodaj" />
+      <TextField fx:id="name" layoutX="278.0" layoutY="192.0" promptText="Imię i nazwisko" />
+      <TextField fx:id="phone" layoutX="278.0" layoutY="239.0" promptText="Numer telefonu" />
+      <TextField fx:id="email" layoutX="278.0" layoutY="285.0" promptText="Adres email" />
+      <TextField fx:id="address" layoutX="607.0" layoutY="192.0" promptText="Adres" />
+      <TextField fx:id="building" layoutX="607.0" layoutY="375.0" promptText="Rodzaj zabudowy" />
+      <TextField fx:id="heating" layoutX="607.0" layoutY="285.0" promptText="Ogrzewanie" />
+      <TextField fx:id="roomsNumber" layoutX="607.0" layoutY="328.0" promptText="Liczba pokoi" />
+      <TextField fx:id="district" layoutX="607.0" layoutY="239.0" promptText="Dzielnica" />
+      <TextField fx:id="surface" layoutX="607.0" layoutY="418.0" promptText="Powierzchnia" />
+      <TextField fx:id="prize" layoutX="607.0" layoutY="462.0" promptText="Cena" />
+      <Text layoutX="290.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dane właściciela:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="637.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inforamcje o mieszkaniu:" wrappingWidth="112.662109375">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Button layoutX="607.0" layoutY="506.0" mnemonicParsing="false" onAction="#addPic" prefHeight="26.0" prefWidth="171.0" text="Dodaj zdjęcie" />
+   </children>
+</AnchorPane>

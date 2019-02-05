@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FindController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="750.0" stroke="BLACK" strokeType="INSIDE" width="1105.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.07211538461538461" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop color="#286cab" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a9d5ff" height="399.0" layoutX="38.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="234.0" />
+       <Button layoutX="14.0" layoutY="683.0" mnemonicParsing="false" onAction="#prev" prefHeight="53.0" prefWidth="105.0" text="Wstecz" />
+       <Button layoutX="39.0" layoutY="518.0" mnemonicParsing="false" onAction="#find" prefHeight="53.0" prefWidth="234.0" text="Szukaj" />
+       <TextField fx:id="district" layoutX="67.0" layoutY="150.0" promptText="Dzielnica" />
+       <TextField fx:id="roomsNumber" layoutX="67.0" layoutY="200.0" promptText="Liczba pokoi" />
+       <TextField fx:id="heating" layoutX="67.0" layoutY="250.0" promptText="Ogrzewanie" />
+       <TextField fx:id="building" layoutX="67.0" layoutY="300.0" promptText="Rodzaj budynku" />
+      <TextField fx:id="fromPrize" layoutX="67.0" layoutY="375.0" prefHeight="26.0" prefWidth="61.0" promptText="Od" />
+      <TextField fx:id="toPrize" layoutX="174.0" layoutY="375.0" prefHeight="26.0" prefWidth="61.0" promptText="Do" />
+      <Label layoutX="128.0" layoutY="348.0" text="Cena:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="419.0" prefHeight="26.0" prefWidth="116.0" text="Powierzchnia:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+       <TextField fx:id="fromSurface" layoutX="67.0" layoutY="450.0" prefHeight="26.0" prefWidth="61.0" promptText="Od" />
+       <TextField fx:id="toSurface" layoutX="174.0" layoutY="450.0" prefHeight="26.0" prefWidth="61.0" promptText="Do" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a9d5ff" height="546.0" layoutX="306.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="730.0" />
+      <ImageView fx:id="imageView" fitHeight="270.0" fitWidth="316.0" layoutX="331.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="341.0" layoutY="432.0" mnemonicParsing="false" onAction="#prevPhoto" prefHeight="22.0" prefWidth="116.0" text="Poprzednie zdjęcie">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <Button layoutX="521.0" layoutY="432.0" mnemonicParsing="false" onAction="#nextPhoto" prefHeight="22.0" prefWidth="116.0" text="Następne zdjęcie">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <Button layoutX="320.0" layoutY="610.0" mnemonicParsing="false" onAction="#prevOffer" text="Poprzednia" />
+      <Button layoutX="942.0" layoutY="610.0" mnemonicParsing="false" onAction="#nextOffer" text="Następna" />
+      <TextArea fx:id="description" editable="false" layoutX="707.0" layoutY="113.0" prefHeight="450.0" prefWidth="316.0" />
+      <Text fx:id="text" layoutX="522.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="297.9999937415123" />
+   </children>
+</AnchorPane>
