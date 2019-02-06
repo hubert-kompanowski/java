@@ -228,7 +228,8 @@ public class DataBase {
 
     public ArrayList<String> allOffers(String email){
         try {
-            ps = con.prepareStatement("SELECT building, address, district, prize FROM dane");
+            ps = con.prepareStatement("SELECT building, address, district, prize FROM dane WHERE email = ?");
+            ps.setString(1, email);
             rs = ps.executeQuery();
 
             ArrayList<String> result = new ArrayList<>();
