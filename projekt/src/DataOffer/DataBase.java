@@ -203,18 +203,25 @@ public class DataBase {
 
     public ArrayList<String> login(String email, String pass){
         try {
-            ps = con.prepareStatement("SELECT login,password,name,phone FROM uzytkownicy");
+            ps = con.prepareStatement("SELECT login,password,name,phone FROM uzytkownicy WHERE login = ? AND password = ?");
+            ps.setString(1, email);
+            ps.setString(2, pass);
             rs = ps.executeQuery();
             String na = "";
             String ph = "";
             ArrayList<String> result = new ArrayList<>();
+
+
+
             while (rs.next()) {
-                if(rs.getString(1).equals(email) && rs.getString(2).equals(pass)){
-                    na = rs.getString(3);
-                    ph = rs.getString(4);
-                }
+//                if(rs.getString(1).equals(email) && rs.getString(2).equals(pass)){
+//                    na = rs.getString(3);
+//                    ph = rs.getString(4);
+//                }
+                na = rs.getString(3);
+                ph = rs.getString(4);
             }
-            if(na!= null){
+            if(na.length()> 1){
                 result.add(na);
                 result.add(ph);
                 return result;
@@ -222,7 +229,7 @@ public class DataBase {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return new ArrayList<>();
+        return null;
     }
 
 
