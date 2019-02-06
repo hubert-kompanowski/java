@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="750.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.IndexController">
+<AnchorPane prefHeight="750.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AccountController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" height="763.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="1115.0">
          <fill>
@@ -18,7 +21,29 @@
             </LinearGradient>
          </fill>
       </Rectangle>
-      <Button layoutX="734.0" layoutY="517.0" mnemonicParsing="false" onAction="#find" prefHeight="215.0" prefWidth="353.0" text="Wyszukaj mieszkania" />
-      <Button layoutX="30.0" layoutY="517.0" mnemonicParsing="false" onAction="#newOffer" prefHeight="215.0" prefWidth="353.0" text="Wstaw ofertę wynajmu" />
+      <Button layoutX="14.0" layoutY="693.0" mnemonicParsing="false" onAction="#prev" prefHeight="53.0" prefWidth="105.0" text="Wyloguj" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#abd6ff" height="406.0" layoutX="41.0" layoutY="201.0" stroke="BLACK" strokeType="INSIDE" width="535.0" />
+      <Text fx:id="data" layoutX="54.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="509.0000198185444">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="302.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Konto użytkownika">
+         <font>
+            <Font size="54.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#abd6ff" height="242.0" layoutX="632.0" layoutY="201.0" stroke="BLACK" strokeType="INSIDE" width="423.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#abd6ff" height="130.0" layoutX="632.0" layoutY="477.0" stroke="BLACK" strokeType="INSIDE" width="423.0" />
+      <Button layoutX="712.0" layoutY="516.0" mnemonicParsing="false" onAction="#newOffer" prefHeight="53.0" prefWidth="263.0" text="Wstaw ofertę wynajmu">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Text layoutX="706.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Twoje oferty:">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Text>
+      <ListView fx:id="offers" layoutX="652.0" layoutY="294.0" prefHeight="130.0" prefWidth="382.0" />
    </children>
 </AnchorPane>

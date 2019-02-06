@@ -19,7 +19,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        grid.add(FXMLLoader.load(getClass().getResource("../GUI/account.fxml")));
+        grid.add(FXMLLoader.load(getClass().getResource("../GUI/index.fxml")));
 
         root.getChildren().setAll(grid.get(0));
         Scene scene = new Scene(root, 1100, 750);

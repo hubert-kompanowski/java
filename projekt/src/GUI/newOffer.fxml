@@ -21,36 +21,96 @@
             </LinearGradient>
          </fill>
       </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#abd6ff" height="197.0" layoutX="264.0" layoutY="134.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#abd6ff" height="421.0" layoutX="593.0" layoutY="134.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#abd6ff" height="351.0" layoutX="173.0" layoutY="185.0" stroke="BLACK" strokeType="INSIDE" width="279.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#abd6ff" height="421.0" layoutX="540.0" layoutY="185.0" stroke="BLACK" strokeType="INSIDE" width="444.0" />
       <Button layoutX="14.0" layoutY="683.0" mnemonicParsing="false" onAction="#prev" prefHeight="53.0" prefWidth="105.0" text="Wstecz" />
       <Button layoutX="982.0" layoutY="683.0" mnemonicParsing="false" onAction="#addOffer" prefHeight="53.0" prefWidth="105.0" text="Dodaj" />
-      <TextField fx:id="name" layoutX="278.0" layoutY="192.0" promptText="Imię i nazwisko" />
-      <TextField fx:id="phone" layoutX="278.0" layoutY="239.0" promptText="Numer telefonu" />
-      <TextField fx:id="email" layoutX="278.0" layoutY="285.0" promptText="Adres email" />
-      <TextField fx:id="address" layoutX="607.0" layoutY="192.0" promptText="Adres" />
-      <TextField fx:id="district" layoutX="607.0" layoutY="239.0" promptText="Dzielnica" />
-      <TextField fx:id="heating" layoutX="607.0" layoutY="285.0" promptText="Ogrzewanie" />
-      <TextField fx:id="roomsNumber" layoutX="607.0" layoutY="328.0" promptText="Liczba pokoi" />
-      <TextField fx:id="building" layoutX="607.0" layoutY="375.0" promptText="Rodzaj zabudowy" />
-      <TextField fx:id="surface" layoutX="607.0" layoutY="418.0" promptText="Powierzchnia" />
-      <TextField fx:id="prize" layoutX="607.0" layoutY="462.0" promptText="Cena" />
-      <Text layoutX="290.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dane właściciela:">
+      <TextField fx:id="name" layoutX="227.0" layoutY="302.0" promptText="Imię i nazwisko" />
+      <TextField fx:id="phone" layoutX="227.0" layoutY="389.0" promptText="Numer telefonu" />
+      <TextField fx:id="email" layoutX="227.0" layoutY="480.0" promptText="Adres email" />
+      <TextField fx:id="address" layoutX="573.0" layoutY="318.0" promptText="Adres" />
+      <TextField fx:id="district" layoutX="573.0" layoutY="401.0" promptText="Dzielnica" />
+      <TextField fx:id="heating" layoutX="573.0" layoutY="479.0" promptText="Ogrzewanie" />
+      <TextField fx:id="roomsNumber" layoutX="573.0" layoutY="556.0" promptText="Liczba pokoi" />
+      <TextField fx:id="building" layoutX="781.0" layoutY="318.0" promptText="Rodzaj zabudowy" />
+      <TextField fx:id="surface" layoutX="781.0" layoutY="401.0" promptText="Powierzchnia" />
+      <TextField fx:id="prize" layoutX="781.0" layoutY="479.0" promptText="Cena" />
+      <Text layoutX="191.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dane właściciela:">
          <font>
-            <Font size="17.0" />
+            <Font size="28.0" />
          </font>
       </Text>
-      <Text layoutX="637.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inforamcje o mieszkaniu:" wrappingWidth="112.662109375">
+      <Text layoutX="558.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inforamcje o mieszkaniu:" wrappingWidth="408.662109375">
          <font>
-            <Font size="17.0" />
+            <Font size="32.0" />
          </font>
       </Text>
-      <Button layoutX="607.0" layoutY="506.0" mnemonicParsing="false" onAction="#addPic" prefHeight="26.0" prefWidth="171.0" text="Dodaj zdjęcie" />
-      <Text fx:id="err" fill="RED" layoutX="223.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="      " textAlignment="CENTER" wrappingWidth="633.7939453125" />
-      <Text fx:id="errPhone" fill="RED" layoutX="110.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="112.66209855675697" />
-      <Text fx:id="errEmail" fill="RED" layoutX="110.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="112.6621151715517" />
-      <Text fx:id="errRoom" fill="RED" layoutX="828.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="170.99998243153095" />
-      <Text fx:id="errSurf" fill="RED" layoutX="828.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="170.99999073892832" />
-      <Text fx:id="errPriz" fill="RED" layoutX="828.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="170.99998243153095" />
+      <Button layoutX="781.0" layoutY="556.0" mnemonicParsing="false" onAction="#addPic" prefHeight="26.0" prefWidth="171.0" text="Dodaj zdjęcie" />
+      <Text fx:id="err" fill="RED" layoutX="241.0" layoutY="688.0" strokeType="OUTSIDE" strokeWidth="0.0" text="      " textAlignment="CENTER" wrappingWidth="633.7939453125" />
+      <Text fx:id="errPhone" fill="RED" layoutX="227.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="112.66209855675697" />
+      <Text fx:id="errEmail" fill="RED" layoutX="227.0" layoutY="517.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="112.6621151715517" />
+      <Text fx:id="errRoom" fill="RED" layoutX="573.0" layoutY="594.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="170.99998243153095" />
+      <Text fx:id="errSurf" fill="RED" layoutX="781.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="170.99999073892832" />
+      <Text fx:id="errPriz" fill="RED" layoutX="781.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="170.99998243153095" />
+      <Text layoutX="227.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imię i nazwisko:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="227.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numer telefonu:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="227.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adres email:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="573.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adres miszkania:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="781.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rodzaj zabudowy:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="573.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dzielnica:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="781.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Powierzchnia:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="573.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ogrzewanie:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="781.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cena [zł]:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="573.0" layoutY="542.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liczba pokoi:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="781.0" layoutY="542.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zdjęcia:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="118.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dodaj nowe ogłoszenie:">
+         <font>
+            <Font size="74.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

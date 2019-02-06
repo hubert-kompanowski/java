@@ -3,19 +3,16 @@ package GUI;
 import APP.Main;
 import DataOffer.Data;
 import DataOffer.DataBase;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
-
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
@@ -24,15 +21,17 @@ import java.util.ResourceBundle;
 
 public class FindController implements Initializable {
 
+
+    @FXML TextField tr;
+    @FXML TextField pseu;
+    @FXML ListView<String> comments = new ListView<String>();
     @FXML Text text;
     @FXML Text description;
     @FXML ImageView imageView = new ImageView();
-
     @FXML TextField district;
     @FXML TextField roomsNumber;
     @FXML TextField heating;
     @FXML TextField building;
-
     @FXML TextField fromPrize;
     @FXML TextField toPrize;
     @FXML TextField fromSurface;
@@ -44,6 +43,9 @@ public class FindController implements Initializable {
     private int size = 0;
     private int sizePhoto = 0;
 
+    public DataBase db = new DataBase();
+
+
     @FXML
     public void prev(){
         Main.setScene(0);
@@ -52,16 +54,10 @@ public class FindController implements Initializable {
 
     @FXML
     public void find() throws IOException {
-        DataBase db = new DataBase();
-
-        db.init();
-
         listData =  db.search(district.getText(), roomsNumber.getText(), heating.getText(),
                 building.getText(), fromPrize.getText(), toPrize.getText(),
                 fromSurface.getText(),toSurface.getText());
         size = listData.size();
-
-
 
         if (size == 0){
             description.setText("Brak wyników");
@@ -70,19 +66,15 @@ public class FindController implements Initializable {
             text.setStyle("-fx-font-size: 30px");
 
         } else {
-
-
             disp();
-
             dispPhoto();
-
         }
     }
+
 
     private void dispPhoto()  {
         BufferedImage img = null;
         try {
-
             for(int i=0; i<listData.get(actual).getISList().size(); i++){
                 InputStream is = listData.get(actual).getISList().get(i);
                 is.reset();
@@ -91,7 +83,6 @@ public class FindController implements Initializable {
                 File f = new File("src/DataOffer/tmp/t"+i+".jpg");
                 ImageIO.write(img, "jpg", f);
             }
-
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -101,11 +92,12 @@ public class FindController implements Initializable {
         imageView.setImage(i);
     }
 
+
     private void disp() {
         text.setText("Oferta "+(actual+1)+" z "+ size);
         text.setStyle("-fx-font-size: 30px");
-
         sizePhoto = listData.get(actual).getISList().size();
+
         description.setText("WŁAŚCICIEL:\n" +
                 listData.get(actual).getName()+ "\n" +
                 listData.get(actual).getPhone()+ "\n" +
@@ -120,60 +112,90 @@ public class FindController implements Initializable {
                 "Cena: " + listData.get(actual).getPrize()+ " zł\n"
         );
         description.setStyle("-fx-font-size: 18px; -fx-font-family: 'Bitstream Charter'");
+
+        for(String s : db.getComments(listData.get(actual).getEmail(),listData.get(actual).getAddress(),
+                listData.get(actual).getDistrict(), listData.get(actual).getHeating(),listData.get(actual).getRoomsNumber(),
+                listData.get(actual).getBuilding(), listData.get(actual).getSurface(), listData.get(actual).getPrize())){
+
+            comments.getItems().add(s);
+        }
     }
 
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        System.out.println("init controller");
+        db.init();
+        imageView.setStyle("-fx-alignment: center");
+        Image i = new Image("file:src/DataOffer/tmp/dom.jpg");
+        imageView.setImage(i);
     }
+
 
     public void prevOffer() {
-        if(actual == 0){
-            actual = size-1;
-        } else {
-            actual--;
+        comments.getItems().clear();
+        if(size != 0) {
+            if (actual == 0) {
+                actual = size - 1;
+            } else {
+                actual--;
+            }
+            actualPhoto = 0;
+            disp();
+            dispPhoto();
         }
-        actualPhoto = 0;
-        disp();
-        dispPhoto();
-
     }
+
 
     public void nextOffer() {
-        if(actual == size-1){
-            actual = 0;
-        } else {
-            actual++;
+        comments.getItems().clear();
+        if(size != 0) {
+            if (actual == size - 1) {
+                actual = 0;
+            } else {
+                actual++;
+            }
+            actualPhoto = 0;
+            disp();
+            dispPhoto();
         }
-        actualPhoto = 0;
-        disp();
-        dispPhoto();
     }
+
 
     public void prevPhoto() {
-
-        if(actualPhoto <= 0){
-            actualPhoto = sizePhoto-1;
-        } else {
-            actualPhoto--;
+        if(size != 0) {
+            if (actualPhoto <= 0) {
+                actualPhoto = sizePhoto - 1;
+            } else {
+                actualPhoto--;
+            }
+            String im = "file:src/DataOffer/tmp/t" + actualPhoto + ".jpg";
+            Image i = new Image(im);
+            imageView.setImage(i);
         }
-
-        String im = "file:src/DataOffer/tmp/t" + actualPhoto + ".jpg";
-        Image i = new Image(im);
-        imageView.setImage(i);
     }
 
-    public void nextPhoto() {
-        if(actualPhoto == sizePhoto-1){
-            actualPhoto = 0;
-        } else {
-            actualPhoto++;
-        }
 
-        String im = "file:src/DataOffer/tmp/t" + actualPhoto + ".jpg";
-        Image i = new Image(im);
-        imageView.setImage(i);
+    public void nextPhoto() {
+        if(size != 0) {
+            if (actualPhoto == sizePhoto - 1) {
+                actualPhoto = 0;
+            } else {
+                actualPhoto++;
+            }
+            String im = "file:src/DataOffer/tmp/t" + actualPhoto + ".jpg";
+            Image i = new Image(im);
+            imageView.setImage(i);
+        }
+    }
+
+
+    public void addCom() {
+        db.addComm(comments.getItems().size(),pseu.getText()+": "+tr.getText(),listData.get(actual).getEmail(),listData.get(actual).getAddress(),
+                listData.get(actual).getDistrict(), listData.get(actual).getHeating(),listData.get(actual).getRoomsNumber(),
+                listData.get(actual).getBuilding(), listData.get(actual).getSurface(), listData.get(actual).getPrize());
+
+        nextOffer();
+        prevOffer();
     }
 }
 

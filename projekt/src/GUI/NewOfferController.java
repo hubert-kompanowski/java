@@ -4,31 +4,27 @@ import APP.Main;
 import DataOffer.Data;
 import DataOffer.DataBase;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-
-
 import java.io.File;
 import java.io.FileNotFoundException;
-
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ResourceBundle;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class NewOfferController {
+public class NewOfferController  implements Initializable {
 
     @FXML Text errRoom;
     @FXML Text errSurf;
     @FXML Text errPriz;
     @FXML Text errPhone;
     @FXML Text errEmail;
-    private List<File> fileList;
-    private ArrayList<String> ListPath = new ArrayList<>();
-    private Stage primaryStage;
-
     @FXML Text err;
     @FXML TextField name;
     @FXML TextField phone;
@@ -41,11 +37,14 @@ public class NewOfferController {
     @FXML TextField surface;
     @FXML TextField prize;
 
+    private List<File> fileList;
+    private ArrayList<String> ListPath = new ArrayList<>();
+    private Stage primaryStage;
 
 
     @FXML
     public void prev(){
-        Main.setScene(0);
+        Main.setScene(1);
     }
 
 
@@ -59,11 +58,9 @@ public class NewOfferController {
         for (File f : fileList) {
             ListPath.add(f.getAbsolutePath());
         }
-
         System.out.println("addPic");
         System.out.println(ListPath.size());
     }
-
 
 
     @FXML
@@ -102,7 +99,6 @@ public class NewOfferController {
         } else if(!prize.getText().matches("\\d{1,10}.?\\d{0,2}")) {
             errPriz.setText("Błędna wartość");
             errPriz.setStyle("-fx-color: red");
-
         }else {
 
             try {
@@ -115,13 +111,13 @@ public class NewOfferController {
                 db.init();
                 db.run(dt);
 
-
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
-            Main.setScene(0);
+            Main.setScene(1);
         }
     }
+
 
     private static final Pattern VALID_EMAIL_ADDRESS_REGEX =
             Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
@@ -131,4 +127,14 @@ public class NewOfferController {
         return matcher.find();
     }
 
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        if(IndexController.name2 != null && IndexController.email2 != null && IndexController.phone2 != null){
+            name.setText(IndexController.name2);
+            email.setText(IndexController.email2);
+            phone.setText(IndexController.phone2);
+            email.setDisable(true);
+        }
+    }
 }
