@@ -12,6 +12,10 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
+/**
+ * Klasa odpowiadająca za kontrolę pól konta użytkownika
+ */
+
 public class AccountController implements Initializable {
 
     @FXML ListView offers;
@@ -20,6 +24,9 @@ public class AccountController implements Initializable {
     private int sceneIndex=2;
 
 
+    /**
+     * Ustawianie poprzedniej sceny
+     */
     @FXML
     public void prev(){
         IndexController.name2 = "";
@@ -35,13 +42,22 @@ public class AccountController implements Initializable {
         }
     }
 
-
+    /**
+     * Dodanie nowej ofrty
+     * @throws IOException
+     */
     @FXML public void newOffer() throws IOException {
         System.out.println("newOffer");
         Main.addScene(FXMLLoader.load(getClass().getResource("newOffer.fxml")));
         Main.setScene(sceneIndex);
         Main.removeLastScene();
     }
+
+    /**
+     * Inicjalizacja przed wyświetleniem sceny
+     * @param location
+     * @param resources
+     */
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

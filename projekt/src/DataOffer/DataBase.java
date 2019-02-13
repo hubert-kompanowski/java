@@ -5,13 +5,19 @@ import java.io.InputStream;
 import java.sql.*;
 import java.util.ArrayList;
 
+/**
+ * Klasa odpowiadająca za połączenia z bazą danych
+ */
+
 public class DataBase {
 
     private Connection con = null;
     private PreparedStatement ps = null;
     private ResultSet rs = null;
 
-
+    /**
+     * Inicjalizacja połączenia z bazą danych
+     */
     public void init(){
         try {
             con = DriverManager.getConnection("jdbc:mysql://localhost/projekt",
@@ -21,7 +27,10 @@ public class DataBase {
         }
     }
 
-
+    /**
+     * Dodawanie nowej oferty do bazy danych
+     * @param dt
+     */
     public void run(Data dt)  {
         try {
             ps = con.prepareStatement("insert into dane(name,phone,email,address,district,heating,roomsNumber,building,surface, prize," +
@@ -52,6 +61,20 @@ public class DataBase {
         }
     }
 
+    /**
+     * Wyszukiwanie wszystkich komentarzy dotyczących danej oferty
+     *
+     * @param email
+     * @param adr
+     * @param dist
+     * @param heat
+     * @param room
+     * @param buil
+     * @param sur
+     * @param pr
+     * @return
+     */
+
     public ArrayList<String> getComments(String email, String adr, String dist, String heat, String room, String buil, String sur, String pr){
         try {
             ps = con.prepareStatement("SELECT k0,k1,k2,k3,k4,k5,k6,k7,k8,k9 FROM dane WHERE district LIKE ? AND" +
@@ -76,6 +99,19 @@ public class DataBase {
         return null;
     }
 
+    /**
+     * Dodanie nowego komentrza do podanej oferty
+     * @param col
+     * @param text
+     * @param email
+     * @param adr
+     * @param dist
+     * @param heat
+     * @param room
+     * @param buil
+     * @param sur
+     * @param pr
+     */
 
     public void addComm(int col, String text, String email, String adr, String dist, String heat, String room, String buil, String sur, String pr){
         try {
@@ -91,6 +127,18 @@ public class DataBase {
         }
     }
 
+    /**
+     * Funkcja pomocnicza do przygodtowania zapytania wysyłanego później do bazy danych
+     * @param email
+     * @param adr
+     * @param dist
+     * @param heat
+     * @param room
+     * @param buil
+     * @param sur
+     * @param pr
+     * @throws SQLException
+     */
 
     private void setSQL(String email, String adr, String dist, String heat, String room, String buil, String sur, String pr) throws SQLException {
         ps.setString(1, dist);
@@ -103,6 +151,18 @@ public class DataBase {
         ps.setString(8, adr);
     }
 
+    /**
+     * Wyszukiwanie ofert pasujących do danych z formularza
+     * @param dis
+     * @param room
+     * @param heat
+     * @param buil
+     * @param fp
+     * @param tp
+     * @param fs
+     * @param ts
+     * @return Lista pasujących ofert
+     */
 
     public ArrayList<Data> search(String dis, String room, String heat, String buil,
                                   String fp, String tp, String fs, String ts){
@@ -186,6 +246,13 @@ public class DataBase {
         return null;
     }
 
+    /**
+     * Dodanie nowego uzytkownika do bazy danych
+     * @param email
+     * @param pass
+     * @param name
+     * @param phone
+     */
 
     public void register(String email, String pass, String name, String phone) {
         try {
@@ -200,6 +267,12 @@ public class DataBase {
         }
     }
 
+    /**
+     * Sprawdzenie czy użytkowik posiada konto
+     * @param email
+     * @param pass
+     * @return Informacje o użytkowniku
+     */
 
     public ArrayList<String> login(String email, String pass){
         try {
@@ -232,6 +305,11 @@ public class DataBase {
         return null;
     }
 
+    /**
+     * Wyszukuje wszystkich ofert dodanych przez użytkownika o podanym emailu
+     * @param email
+     * @return Lista ofert użytkownika
+     */
 
     public ArrayList<String> allOffers(String email){
         try {
@@ -256,6 +334,10 @@ public class DataBase {
         return new ArrayList<>();
     }
 
+    /**
+     * Wszystkie loginy z bazy danych
+     * @return Zwraca loginy wszystkich użytkowników
+     */
 
     public ArrayList<String> allLogins(){
         try {

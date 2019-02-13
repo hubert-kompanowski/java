@@ -18,6 +18,10 @@ import java.util.ResourceBundle;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * Klasa odpowiadająca za kontrolę sceny dodawania nowej oferty
+ */
+
 public class NewOfferController  implements Initializable {
 
     @FXML Text errRoom;
@@ -42,12 +46,17 @@ public class NewOfferController  implements Initializable {
     private Stage primaryStage;
 
 
+    /**
+     * Przełączeni na poprzednią scene
+     */
     @FXML
     public void prev(){
         Main.setScene(1);
     }
 
-
+    /**
+     * dodawanie zdjęć do oferty
+     */
     @FXML
     public void addPic(){
         FileChooser fc = new FileChooser();
@@ -63,6 +72,9 @@ public class NewOfferController  implements Initializable {
     }
 
 
+    /**
+     * Dodanie oferty
+     */
     @FXML
     public void addOffer(){
         err.setText(" ");
@@ -121,13 +133,21 @@ public class NewOfferController  implements Initializable {
 
     private static final Pattern VALID_EMAIL_ADDRESS_REGEX =
             Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
-
+    /**
+     * Funkcja pomocnicza do sprawdzenia poprawności adresu Email
+     * @param emailStr
+     * @return
+     */
     private static boolean validate(String emailStr) {
         Matcher matcher = VALID_EMAIL_ADDRESS_REGEX .matcher(emailStr);
         return matcher.find();
     }
 
-
+    /**
+     * Inicjalizacja przed uruchomieniem sceny
+     * @param location
+     * @param resources
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         if(IndexController.name2 != null && IndexController.email2 != null && IndexController.phone2 != null){

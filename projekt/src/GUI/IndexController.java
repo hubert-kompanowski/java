@@ -15,6 +15,10 @@ import java.util.ResourceBundle;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * Klasa odpowiadająca za kontrolę sceny początkowej porogramu
+ */
+
 public class IndexController implements Initializable {
 
     @FXML Text textRej;
@@ -31,7 +35,10 @@ public class IndexController implements Initializable {
     static public String email2;
     static public String phone2;
 
-
+    /**
+     * Przełączenie sceny na wyszukiwanie ofert
+     * @throws IOException
+     */
     @FXML public void find() throws IOException {
         System.out.println("find");
         Main.addScene(FXMLLoader.load(getClass().getResource("find.fxml")));
@@ -40,7 +47,9 @@ public class IndexController implements Initializable {
     }
 
 
-
+    /**
+     * Zalogowanie użytkownika i przejście do sceny użytkownika
+     */
     @FXML public void logIn() {
 
         DataBase db = new DataBase();
@@ -64,6 +73,9 @@ public class IndexController implements Initializable {
         }
     }
 
+    /**
+     * Rejestracja użytkownika
+     */
     @FXML public void register() {
 
         if(!validate(emailReg.getText())){
@@ -97,12 +109,21 @@ public class IndexController implements Initializable {
     private static final Pattern VALID_EMAIL_ADDRESS_REGEX =
             Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
 
+    /**
+     * Funkcja pomocnicza do sprawdzenia poprawności adresu Email
+     * @param emailStr
+     * @return
+     */
     private static boolean validate(String emailStr) {
         Matcher matcher = VALID_EMAIL_ADDRESS_REGEX .matcher(emailStr);
         return matcher.find();
     }
 
-
+    /**
+     * Inicjalizacja przed uruchomiwniem sceny
+     * @param location
+     * @param resources
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         email.setText("");

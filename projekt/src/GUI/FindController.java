@@ -19,6 +19,10 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
+/**
+ * Klasa odpowiadająca za kontrolę sceny szukania ofert
+ */
+
 public class FindController implements Initializable {
 
 
@@ -45,13 +49,19 @@ public class FindController implements Initializable {
 
     public DataBase db = new DataBase();
 
+    /**
+     * Powrót do poprzedniej sceny
+     */
 
     @FXML
     public void prev(){
         Main.setScene(0);
     }
 
-
+    /**
+     * Wyszukiwanie ofert pasujących do danych z formularza
+     * @throws IOException
+     */
     @FXML
     public void find() throws IOException {
         listData =  db.search(district.getText(), roomsNumber.getText(), heating.getText(),
@@ -71,6 +81,9 @@ public class FindController implements Initializable {
         }
     }
 
+    /**
+     * Wyświetlanie zdjęć z oferty
+     */
 
     private void dispPhoto()  {
         BufferedImage img = null;
@@ -92,7 +105,9 @@ public class FindController implements Initializable {
         imageView.setImage(i);
     }
 
-
+    /**
+     * Wyświetlanie danych z oferty
+     */
     private void disp() {
         text.setText("Oferta "+(actual+1)+" z "+ size);
         text.setStyle("-fx-font-size: 30px");
@@ -121,7 +136,11 @@ public class FindController implements Initializable {
         }
     }
 
-
+    /**
+     * Inicjalizacja sceny przed uruchomieniem
+     * @param location
+     * @param resources
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         db.init();
@@ -131,6 +150,9 @@ public class FindController implements Initializable {
     }
 
 
+    /**
+     * Przełączenie poprzedniej oferty
+     */
     public void prevOffer() {
         comments.getItems().clear();
         if(size != 0) {
@@ -145,7 +167,9 @@ public class FindController implements Initializable {
         }
     }
 
-
+    /**
+     * Przełączenie następnej oferty
+     */
     public void nextOffer() {
         comments.getItems().clear();
         if(size != 0) {
@@ -160,7 +184,9 @@ public class FindController implements Initializable {
         }
     }
 
-
+    /**
+     * Przełączenie poprzedniego zdjęcia
+     */
     public void prevPhoto() {
         if(size != 0) {
             if (actualPhoto <= 0) {
@@ -174,7 +200,9 @@ public class FindController implements Initializable {
         }
     }
 
-
+    /**
+     * Przełącznie następnego zdjęcia
+     */
     public void nextPhoto() {
         if(size != 0) {
             if (actualPhoto == sizePhoto - 1) {
@@ -188,7 +216,9 @@ public class FindController implements Initializable {
         }
     }
 
-
+    /**
+     * Dodawanie komentarza
+     */
     public void addCom() {
         db.addComm(comments.getItems().size(),pseu.getText()+": "+tr.getText(),listData.get(actual).getEmail(),listData.get(actual).getAddress(),
                 listData.get(actual).getDistrict(), listData.get(actual).getHeating(),listData.get(actual).getRoomsNumber(),

@@ -7,12 +7,13 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *  Klasa przechowująca dane o ogłoszeniu
+ */
+
 public class Data {
 
     private String name;
-
-
-
     private String phone;
     private String email;
     private String address;
@@ -24,11 +25,9 @@ public class Data {
     private String prize;
     private ArrayList<InputStream> ISList = new ArrayList<>();
 
-
     public void setISList(ArrayList<InputStream> ISList) {
         this.ISList = ISList;
     }
-
 
     public String getName() {
         return name;
@@ -64,6 +63,22 @@ public class Data {
         return ISList;
     }
 
+    /**
+     * Konstruktor przyjmujący wszystkie dane z ogłoszenia
+     *
+     * @param name
+     * @param phone
+     * @param email
+     * @param address
+     * @param district
+     * @param heating
+     * @param roomsNumber
+     * @param building
+     * @param surface
+     * @param prize
+     * @param list
+     * @throws FileNotFoundException
+     */
     public Data(String name, String phone, String email, String address, String district,
                 String heating, String roomsNumber, String building, String surface,
                 String prize, ArrayList<String> list) throws FileNotFoundException {
